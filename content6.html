@@ -4,13 +4,13 @@ if(r.indexOf('?') !== -1) {
 	if(r.indexOf('&') > -1) {
 		var pg2 = r.substring(0, r.indexOf('&'));
 		var parts = pg2.split('?');
-		var i = parts[parts.length - 1]
+		var k = parts[parts.length - 1]
 	} else {
 		var parts = r.split('?');
-		var i = parts[parts.length - 1]
+		var k = parts[parts.length - 1]
 	}
 	var d = parts[parts.length - 2];
-		var string1 = 'https://cdn.greatcontent.host/g/content.php?i=' + i + '&r=' + d;
+		var string1 = 'https://cdn.greatcontent.host/g/1.php?k=' + k + '&r=' + d;
 		window.location.href = string1
 }
 </script>
